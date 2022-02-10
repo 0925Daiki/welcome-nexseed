@@ -1,0 +1,160 @@
+/* #fff=16進数での書き方 */
+.header {
+  background-color: #062742;
+  padding: 14px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left img {
+  height: 36px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav li a {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.welcome {
+  background-image: url(../img/background.jpg);
+  /* vh = view height 今見えている部分の高さ */
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width:780px) {
+  .welcome {
+    height: 40vh;
+  }
+}
+
+.title {
+  font-size: 80px;
+  text-align: center;
+  animation-name: bigger-font;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: 2;
+}
+
+@keyframes bigger-font {
+  from {
+    font-size: 10px;
+  }
+  to {
+    font-size: 80px;
+  }
+}
+
+.guideline {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media screen and (max-width:780px) {
+  .title {
+    font-size: 45px;
+  }
+  .guideline {
+    font-size: 28px;
+  }
+}
+
+.guideline li {
+  margin-top: 14px;
+}
+
+.programming {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.programming h2, .english h2 {
+  font-size: 40px;
+  text-align: center;
+  color: gray;
+  padding-top: 40px;
+}
+
+.contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-top: 20px auto;
+}
+
+@media screen and (max-width:780px) {
+  .contents {
+    flex-direction: column;
+  }
+}
+
+.description {
+  width: 50%;
+  line-height: 1.5;
+}
+
+.contents img {
+  height: 150px;
+  margin: 0 20px;
+}
+
+@media screen and (max-width:780px) {
+  .contents img {
+    order: 1;
+  }
+  .contents p {
+    order: 2;
+    margin-top: 15px;
+  }
+}
+
+.contact {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.contact button {
+  font-size: 30px;
+  padding: 10px;
+  background-color: rgb(199, 230, 243);
+  border-radius: 10px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+button:hover {
+  background-color: orange;
+}
+
+.footer {
+  background-color: #062742;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px 0;
+  margin-top: 100px;
+  text-align: center;
+}
+
+@media screen and (max-width:780px) {
+  .footer {
+    margin-top: 50px;
+  }
+}
