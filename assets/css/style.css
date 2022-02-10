@@ -126,24 +126,6 @@
   }
 }
 
-.contact {
-  margin-top: 50px;
-  text-align: center;
-}
-
-.contact button {
-  font-size: 30px;
-  padding: 10px;
-  background-color: rgb(199, 230, 243);
-  border-radius: 10px;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-}
-
-button:hover {
-  background-color: orange;
-}
-
 .footer {
   background-color: #062742;
   color: #fff;
